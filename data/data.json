@@ -2,21 +2,21 @@
     {
         "image" : "./img/blue_p.png",
         "type" : "pants",
-        "color" : "blule",
+        "color" : "blue",
         "gender" : "male",
         "size": "small"
     },
     {
         "image" : "./img/blue_s.png",
         "type" : "skirt",
-        "color" : "blule",
+        "color" : "blue",
         "gender" : "female",
         "size": "small"
     },
     {
         "image" : "./img/blue_t.png",
-        "type" : "pants",
-        "color" : "blule",
+        "type" : "tshirt",
+        "color" : "blue",
         "gender" : "female",
         "size": "small"
     },
