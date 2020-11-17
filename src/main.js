@@ -32,7 +32,7 @@ function rederItemList(data){
 
 async function getItem(){
     try {
-        const response = await fetch('../data/data.json');
+        const response = await fetch('./data/data.json');
         const data = await response.json()
         return data;
     } catch(e){
