@@ -8,6 +8,101 @@
   --color-light-grey: #dfdfdf;
 }
 
+/* reset.css */
 * {
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+ul, ol, li { 
+  list-style: none; 
+}
+button {
+  background-color: transparent;
+  border: none;
+  font-size: inherit;
+  cursor: pointer;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #333;
+}
+
+/* .container */
+.container {
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 0px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* #headBox */
+ #headBox > h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#headBox > .gnb{
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+#headBox > .gnb > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 500px;
+  padding: 10px;
+}
+#headBox > .gnb > ul > li {
+  width: auto;
+  height: 40px;
+  font-size: 1.25rem;
+  line-height: 40px;
+}
+#headBox > .gnb img {
+  width: 40px;
+  pointer-events: none;
+}
+#headBox > .gnb button[data-key="color"]{
+  border-radius: 0.5rem;
+  padding: 0rem 1rem;
+  height: 40px;
+}
+#headBox > .gnb button[data-value="blue"]{
+  background-color: var(--color-blue);
+}
+#headBox > .gnb button[data-value="yellow"]{
+  background-color: var(--color-yellow);
+}
+#headBox > .gnb button[data-value="pink"]{
+  background-color: var(--color-pink);
+}
+
+/* main */
+main {
+  margin-top: 20px;
+  padding: 0 10px;
+  height: 100%;
+  overflow-y: auto;
+  font-family: serif;
+}
+main .item-list > li {
+  display: flex;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin-bottom: 10px;
+  align-items: center;
+}
+main .item-list > li img {
+  width: 36px;
+  height: 34px;
+  margin-right: 10px;
 }
